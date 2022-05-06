@@ -14,9 +14,16 @@ mongoose
   .catch((err) => {
     console.log("oh no!!", err);
   });
-//creating meeting schema
-// const meetingSchema = new mongoose.Schema({
-//   roomId: String,
-//   msg: [{ message: String, username: String, time: String }],
-//   users:[{username:String,id:String}]
-// });
+//creating registration schema
+const registrationSchema = new mongoose.Schema({
+  Name:String,
+  RegNo:String,
+  CollegeEmail:String,
+  PhoneNo:String,
+  Branch:String,
+  Year:String,
+  Gender:String
+});
+const Registration=mongoose.model('Registration',registrationSchema)
+// exporting both of the schema
+module.exports={Registration}

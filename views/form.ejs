@@ -1,23 +1,23 @@
 <%-include('./partials/head.ejs', {title:"Register"});%>
 <%-include('./partials/navbar.ejs');%>
 <div class="container">
-  <form class="Registration">
+  <form class="Registration" method="POST">
     <div class="Registration">
         <h1>Registration Form</h1>
-        <!-- <p class="text-danger" id="alerts">* To participate in event registration is mandatory.</p>
+        <p class="text-danger" id="alerts">* To participate in event registration is mandatory.</p>
         </div>
     <div class="mb-3 row">
       <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputName" />
+      <div class="col-sm-10 ">
+        <input type="text" class="form-control" name="inputName" required/>
       </div>
     </div>
     <div class="mb-3 row">
       <label for="inputRegNo" class="col-sm-2 col-form-label"
         >Registration No</label
       >
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputRegNo" />
+      <div class="col-sm-10 ">
+        <input type="text" class="form-control" name="inputRegNo" required />
       </div>
     </div>
     <div class="mb-3 row">
@@ -25,22 +25,22 @@
         >College Email</label
       >
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputEmail" />
+        <input type="text" class="form-control" name="inputEmail" required />
       </div>
     </div>
     <div class="mb-3 row">
-      <label for="inputPhoneNumber" class="col-sm-2 col-form-label"
+      <label for="inputPhoneNo" class="col-sm-2 col-form-label"
         >Phone Number</label
       >
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputPhoneNumber" />
+        <input type="text" class="form-control" name="inputPhoneNo" required />
       </div>
     </div>
     <div class="mb-3 row">
       <label for="inputBranch" class="col-sm-2 col-form-label">Branch</label>
       <div class="col-sm-10">
-        <select class="form-select" aria-label="Branch" id="inputBranch">
-          <option value="Comp-A" selected>Comp-A</option>
+        <select class="form-select" aria-label="Branch" name="inputBranch" required>
+          <option value="Comp-A">Comp-A</option>
           <option value="Comp-B">Comp-B</option>
           <option value="IT">IT</option>
           <option value="Entc-A">Entc-A</option>
@@ -59,6 +59,7 @@
             name="inputYear"
             id="inputYearFE"
             value="FE"
+            checked
           />
           <label class="form-check-label" for="inputYearFE">FE</label>
         </div>
@@ -104,6 +105,7 @@
             name="inputGender"
             id="inputGenderM"
             value="Male"
+            checked
           />
           <label class="form-check-label" for="inputGenderM">Male</label>
         </div>
@@ -115,12 +117,11 @@
             id="inputGenderF"
             value="Female"
           />
-          <label class="form-check-label" for="inputGenderF">Female</label>
+          <label class="form-check-label " for="inputGenderF">Female</label>
         </div>
-      </div> -->
+      </div>
     </div>
-    <!-- <button type="submit" class="btn btn-primary Registration">Submit</button> -->
-    <div class="text-success" style="text-align: center;"><h2> On the way 🚀!!</h2></div>
+    <button type="submit" class="btn btn-primary Registration form-control">Submit</button>
   </form>
 </div>
 <%-include('./partials/footer.ejs');%>
