@@ -1,6 +1,6 @@
 <%-include('./partials/head.ejs', {title:"Organising team"});%>
 <%-include('./partials/navbar.ejs');%>
-<div class="container">
+<div class="container" id="team-cont">
     <h1 style="text-align:center;margin-top: 2%;margin-bottom: 3%;">Organising Team</h1>
     <% for(let j=0; j<list.length; j++) { %>
         <h3 style="text-align:center;margin-top: 2%;margin-bottom: 3%;"><%=list[j].title%></h3>
