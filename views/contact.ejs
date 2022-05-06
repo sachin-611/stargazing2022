@@ -1,0 +1,19 @@
+<%-include('./partials/head.ejs', {title:"Contact us"});%>
+<%-include('./partials/navbar.ejs');%>
+
+<div class="container">
+    <h1 style="text-align:center;margin-top: 2%;margin-bottom: 3%;">Feel Free to Reach us Out</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <% for(let j=0; j<list.length; j++) { %>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><%=list[j].name%></h5>
+                        <p class="card-text">Phone- <%=list[j].phone%> <br>Email:- <%=list[j].email%></p>
+                    </div>
+                </div>
+            </div>
+        <%}%>
+    </div>
+</div>
+<%-include('./partials/footer.ejs');%>

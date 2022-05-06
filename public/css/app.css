@@ -1,0 +1,25 @@
+.root{
+    min-height: 97%;
+}
+.facebook,.insta{
+    height: 6%;
+    width: 6%;
+}
+.facebook:hover,.insta:hover{
+    height: 6.3%;
+    width: 6.3%;
+}
+.registration{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.btn{
+    margin-top:2%;
+}
+.icons{
+    height:30%;
+    width: 30%;
+}
+.teams{
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+<%-include('./partials/head.ejs', {title:"Organising team"});%>
+<%-include('./partials/navbar.ejs');%>
+<div class="container">
+    <h1 style="text-align:center;margin-top: 2%;margin-bottom: 3%;">Organising Team</h1>
+    <% for(let j=0; j<list.length; j++) { %>
+        <h3 style="text-align:center;margin-top: 2%;margin-bottom: 3%;"><%=list[j].title%></h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <% for(let i=0; i<list[j].ppl.length; i++) { %>
+                <div class="col">
+                    <div class="card teams">
+                        <div class="card-body">
+                            <h5 class="card-title"><img class="icons" src=<%=gender[list[j].ppl[i].gender]%>></h5>
+                            <p class="card-text"><%=list[j].ppl[i].name%></p>
+                        </div>
+                    </div>
+                </div>
+            <%}%>
+        </div>
+    <%}%>
+</div>
+<%-include('./partials/footer.ejs');%>
