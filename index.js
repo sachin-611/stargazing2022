@@ -36,9 +36,9 @@ app.post('/form',(req,res)=>{
 })
 app.get('/team',(req,res)=>{
     res.render("team",{list:[
-        {title:"Secretary",ppl:[{name:"Sachin Choudhary",gender:"M"},{name:"Arvind Kumar",gender:"M"}]},
+        {title:"Event Head",ppl:[{name:"Sachin Choudhary",gender:"M"},{name:"Arvind Kumar",gender:"M"},{name:"Ankit Gadhwal",gender:"M"}]},
         {title:"Joint Secretary",ppl:[{name:"Anurag Singh",gender:"M"},{name:"Promod Jyani",gender:"M"},{name:"Nikita Pal",gender:"F"},{name:"Khusbhu",gender:"F"}]},
-        {title:"Members",ppl:[{name:"Vansh ",gender:"M"},{name:"Reema",gender:"F"},{name:"Ganga ",gender:"F"},{name:"Ankita",gender:"F"},{name:"Sagun",gender:"F"}]}],
+        {title:"Members",ppl:[{name:"Vansh ",gender:"M"},{name:"Reema",gender:"F"},{name:"Ganga ",gender:"F"},{name:"Ankita",gender:"F"},{name:"Sagun",gender:"F"},{name:"Simran",gender:"F"}]}],
         gender:{"M":"https://cdn-icons-png.flaticon.com/512/3667/3667289.png",
         "F":"https://cdn-icons-png.flaticon.com/512/949/949635.png"}
 })
